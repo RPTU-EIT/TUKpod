@@ -1,6 +1,0 @@
-Teensy 3.5                                x 1
-AudioShield                               x 1
-1k Potentiometer                          x 1
-456352 Einlötstiftleiste gerade 3 p.      x n-1
-456533 Buchsenleiste einreihig 36pol.     x 1
-452821 Klinkenstecker 3,5mm stereo        x 1
