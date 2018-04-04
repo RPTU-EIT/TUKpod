@@ -32,6 +32,7 @@ void loop() {
   //read analog value from poti
   vol = analogRead(volumePin);    //The PC volume does not change the teensy volume.
                                   //Use vol = usbIn.volume(); instead of vol = analogRead(volumePin);
+                                  //usbIn.volume() should give you a value between 0 and 1
   //sets the volume to a range between 0 and 1023
   vol = constrain(vol, 0, 1023);
   //transform it to a range between 0 and maxVolume
