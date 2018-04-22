@@ -1,4 +1,4 @@
-//Versuch 3
+//example 3
 #include <Wire.h>
 #include <SPI.h>
 #include <SD.h>

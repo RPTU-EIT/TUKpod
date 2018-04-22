@@ -1,4 +1,4 @@
-//Versuch 2
+//example 2
 //Caution: set Tools/USB Type/Audio !
 
 #include <Audio.h>

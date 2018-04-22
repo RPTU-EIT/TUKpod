@@ -1,4 +1,4 @@
-//Versuch 4
+//example 4
 #include <Audio.h>
 #include <Wire.h>
 #include <SPI.h>
