@@ -38,7 +38,7 @@ AudioControlSGTL5000     audioShield;    //xy=540,446
 const int audioShieldInput = AUDIO_INPUT_LINEIN;
 
 void setup() {
-	//allocate memory (https://www.pjrc.com/teensy/td_libs_AudioConnection.html)
+  //allocate memory (https://www.pjrc.com/teensy/td_libs_AudioConnection.html)
   AudioMemory(12);
   
   //enable the audioShield (https://www.pjrc.com/store/teensy3_audio.html)
