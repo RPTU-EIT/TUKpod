@@ -7,16 +7,16 @@
 #include <SerialFlash.h>
 
 // GUItool: begin automatically generated code
-AudioInputI2S            lineIn;         //xy=534,332
-AudioFilterBiquad        biquadLowpassRight; //xy=772,252
-AudioFilterBiquad        biquadLowpassLeft; //xy=774,216
-AudioFilterBiquad        biquadHighpassLeft; //xy=774,312
-AudioFilterBiquad        biquadHighpassRight; //xy=774,351
-AudioFilterBiquad        biquadBandpassLeft; //xy=776,401
-AudioFilterBiquad        biquadBandpassRight; //xy=776,440
-AudioMixer4              mixerRight;     //xy=1009,374
-AudioMixer4              mixerLeft;      //xy=1010,284
-AudioOutputI2S           lineOut;        //xy=1163,328
+AudioInputI2S            lineIn;         //xy=525,332
+AudioFilterBiquad        biquadLowpassRight; //xy=763,252
+AudioFilterBiquad        biquadLowpassLeft; //xy=765,216
+AudioFilterBiquad        biquadHighpassLeft; //xy=765,312
+AudioFilterBiquad        biquadHighpassRight; //xy=765,351
+AudioFilterBiquad        biquadBandpassLeft; //xy=767,401
+AudioFilterBiquad        biquadBandpassRight; //xy=767,440
+AudioMixer4              mixerRight;     //xy=1000,374
+AudioMixer4              mixerLeft;      //xy=1001,284
+AudioOutputI2S           lineOut;        //xy=1154,328
 AudioConnection          patchCord1(lineIn, 0, biquadLowpassLeft, 0);
 AudioConnection          patchCord2(lineIn, 0, biquadHighpassLeft, 0);
 AudioConnection          patchCord3(lineIn, 0, biquadBandpassLeft, 0);
@@ -28,11 +28,11 @@ AudioConnection          patchCord8(biquadLowpassRight, 0, mixerRight, 0);
 AudioConnection          patchCord9(biquadLowpassLeft, 0, mixerLeft, 0);
 AudioConnection          patchCord10(biquadHighpassLeft, 0, mixerLeft, 1);
 AudioConnection          patchCord11(biquadHighpassRight, 0, mixerRight, 1);
-AudioConnection          patchCord12(biquadHighpassRight, 0, mixerRight, 2);
-AudioConnection          patchCord13(biquadBandpassLeft, 0, mixerLeft, 2);
+AudioConnection          patchCord12(biquadBandpassLeft, 0, mixerLeft, 2);
+AudioConnection          patchCord13(biquadBandpassRight, 0, mixerRight, 2);
 AudioConnection          patchCord14(mixerRight, 0, lineOut, 1);
 AudioConnection          patchCord15(mixerLeft, 0, lineOut, 0);
-AudioControlSGTL5000     audioShield;    //xy=549,446
+AudioControlSGTL5000     audioShield;    //xy=540,446
 // GUItool: end automatically generated code
 
 const int audioShieldInput = AUDIO_INPUT_LINEIN;
