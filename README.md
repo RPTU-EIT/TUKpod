@@ -7,7 +7,7 @@ Google API gekoppelt ist. Das Audiosignal wird daraufhin von einem Mikrokontroll
 Im [GitHub-Wiki](ttps://github.com/TUK-EIT/tukpod) befindet sich eine ausführliche Anleitung und eine Großzahl an 
 technischen Details, welche die Einrichtung und Umsetzung des TukPods beschreibt.<br />
 
-Der Bau des TUKpods ist nicht an eine Anmeldung für das Orientierungsstudienprogramms gebunden, da alle Materialien und
+Der Bau des TUKpods ist nicht an eine Anmeldung für das Orientierungsstudienprogramm gebunden, da alle Materialien und
 Codebeispiele in diesem GitHub-Repository bereitgestellt werden.
 
 ### Struktur:
