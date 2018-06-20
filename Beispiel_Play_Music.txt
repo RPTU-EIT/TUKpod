@@ -1,0 +1,109 @@
+{
+    "manifest": {
+        "displayName": "play music",
+        "invocationName": "play music",
+        "category": "PRODUCTIVITY"
+    },
+    "actions": [
+        {
+            "name": "com.acme.actions.play_music",
+            "availability": {
+                "deviceClasses": [
+                    {
+                        "assistantSdkDevice": {}
+                    }
+                ]
+            },
+            "intent": {
+                "name": "com.acme.intents.play_music",
+                "parameters": [
+                ],
+                "trigger": {
+                    "queryPatterns": [
+                        "play music",
+			"start music"
+                    ]
+                }
+            },
+            "fulfillment": {
+                "staticFulfillment": {
+                    "templatedResponse": {
+                        "items": [
+                            {
+                                "simpleResponse": {
+                                    "textToSpeech": "alright. playback started"
+                                }
+                            },
+                            {
+                                "deviceExecution": {
+                                    "command": "com.acme.commands.play_music",
+                                    "params": {
+					"playback": "True"
+                                    }
+                                }
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+	{
+            "name": "com.acme.actions.stop_music",
+            "availability": {
+                "deviceClasses": [
+                    {
+                        "assistantSdkDevice": {}
+                    }
+                ]
+            },
+            "intent": {
+                "name": "com.acme.intents.stop_music",
+                "parameters": [
+                ],
+                "trigger": {
+                    "queryPatterns": [
+                        "stop music",
+						"stop playback"
+                    ]
+                }
+            },
+            "fulfillment": {
+                "staticFulfillment": {
+                    "templatedResponse": {
+                        "items": [
+                            {
+                                "simpleResponse": {
+                                    "textToSpeech": "alright. playback stopped"
+                                }
+                            },
+                            {
+                                "deviceExecution": {
+                                    "command": "com.acme.commands.stop_music",
+                                    "params": {
+					"playback": "False"
+                                    }
+                                }
+                            }
+                        ]
+                    }
+                }
+            }
+        }
+    ],
+    "types": [
+        {
+            "name": "$LightType",
+            "entities": [
+                {
+                    "key": "LIGHT",
+                    "synonyms": [
+                        "LED",
+                        "light",
+                        "bulb",
+                        "light bulb"
+                    ]
+                }
+            ]
+        }
+    ]
+}
