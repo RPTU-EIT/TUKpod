@@ -4,8 +4,8 @@ entstanden.<br /><br />
 Der TUKpod ist ein smarter Lautsprecher, der wie seine großen Geschwister: Alexa, Google Home oder HomePod Sprachbefehle
 entgegennimmt und ausführt. Die Aufnahme und Verarbeitung der Sprachbefehle erfolgt über einen RaspberryPi, welcher mit einer 
 Google API gekoppelt ist. Das Audiosignal wird daraufhin von einem Mikrokontroller bearbeitet und anschließend ausgeben. 
-Im [GitHub-Wiki](ttps://github.com/TUK-EIT/tukpod) befindet sich eine ausführliche Anleitung und eine Großzahl an 
-technischen Details, welche die Einrichtung und Umsetzung des TukPods beschreibt.<br />
+Im [GitHub-Wiki](ttps://github.com/TUK-EIT/tukpod) befinden sich eine ausführliche Anleitung und eine Großzahl an 
+technischen Details, welche die Einrichtung und Umsetzung des TukPods beschreiben.<br />
 
 Der Bau des TUKpods ist nicht an eine Anmeldung für das Orientierungsstudienprogramm gebunden, da alle Materialien und
 Codebeispiele in diesem GitHub-Repository bereitgestellt werden.
