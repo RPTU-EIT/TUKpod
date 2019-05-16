@@ -1,0 +1,105 @@
+{
+    "manifest": {
+        "displayName": "play music",
+        "invocationName": "spiele musik",
+        "category": "PRODUCTIVITY"
+    },
+    "actions": [
+        {
+            "name": "com.acme.actions.play_music",
+            "availability": {
+                "deviceClasses": [
+                    {
+                        "assistantSdkDevice": {}
+                    }
+                ]
+            },
+            "intent": {
+                "name": "com.acme.intents.play_music",
+                "parameters": [
+                ],
+                "trigger": {
+                    "queryPatterns": [
+                        "start playback"
+                    ]
+                }
+            },
+            "fulfillment": {
+                "staticFulfillment": {
+                    "templatedResponse": {
+                        "items": [
+                            {
+                                "simpleResponse": {
+                                    "textToSpeech": "ok"
+                                }
+                            },
+                            {
+                                "deviceExecution": {
+                                    "command": "com.acme.commands.play_music",
+                                    "params": {
+                                    }
+                                }
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+	{
+            "name": "com.acme.actions.stop_music",
+            "availability": {
+                "deviceClasses": [
+                    {
+                        "assistantSdkDevice": {}
+                    }
+                ]
+            },
+            "intent": {
+                "name": "com.acme.intents.stop_music",
+                "parameters": [
+                ],
+                "trigger": {
+                    "queryPatterns": [
+			"stop playback"
+                    ]
+                }
+            },
+            "fulfillment": {
+                "staticFulfillment": {
+                    "templatedResponse": {
+                        "items": [
+                            {
+                                "simpleResponse": {
+                                    "textToSpeech": "ok"
+                                }
+                            },
+                            {
+                                "deviceExecution": {
+                                    "command": "com.acme.commands.stop_music",
+                                    "params": {
+                                    }
+                                }
+                            }
+                        ]
+                    }
+                }
+            }
+        }
+    ],
+    "types": [
+        {
+            "name": "$LightType",
+            "entities": [
+                {
+                    "key": "LIGHT",
+                    "synonyms": [
+                        "LED",
+                        "light",
+                        "bulb",
+                        "light bulb"
+                    ]
+                }
+            ]
+        }
+    ]
+}
